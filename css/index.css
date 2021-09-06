@@ -1,0 +1,103 @@
+button{border: none;}
+hr{width: 70%;}
+#sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #628395;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+#sidebar img{
+    margin-left: 20%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#main{
+    transition: margin-left .5s;
+}
+#sidebut{
+    width: 50px;
+    height: 50px;
+    background-color: #FFE3E3;
+}
+#sidebut:hover{cursor: pointer;}
+#desc{
+    text-align: center;
+    padding: 10%;
+}
+#bod{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#topics{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 55%;
+    height: 45%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+}
+.topic{
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+    width: 30%;
+    height: 40%;
+    background-color: #262A53;
+    transition-duration: 0.4s;
+}
+.des{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 5px;
+    transition-duration: 0.4s;
+}
+.intro{
+    display: none;
+    font-size: 14px;
+    height: 0%;
+    text-align: left;
+    padding-left: 10px;
+}
+.topic-icon{
+    width: 30%;
+    margin: auto;
+}
+.topic-icon img{
+    width: 50px;
+    height: 50px;
+}
+.topic:hover{
+    background-color: #628395;
+}
+.topic:hover .header{
+    font-size: 24px;
+    height: 40%;
+}
+.topic:hover .intro{
+    display: block;
+    height: 60%;
+}
