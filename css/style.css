@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+    --head-height: 20vh;
+} 
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    color: rgb(71 85 105);
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(215 215 215);
+    transition-duration: 2s;
+}
+
+header#particles-js {
+    width: 100vw;
+    height: var(--head-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header#particles-js > div#head {
+    font-size: 34px;
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+svg#theme-change:hover, svg#rainbow-text:hover {
+    cursor: pointer;
+}
+
+div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+.project > a {
+    text-decoration: none;
+}
+
+section {
+    width: 50%;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+section > header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+
+.desc {
+    margin: 0;
+    font-size: 18px;
+    padding: 0;
+}
+
+.section-left > header {
+    border-left: 2px black solid;
+    border-left-color: rgb(71 85 105);
+    text-align: left;
+    padding-left: 10px;
+}
+
+.section-left main {
+    text-align: left;
+}
+
+.section-right > header {
+    border-right: 2px black solid;
+    border-right-color: rgb(71 85 105);
+    text-align: right;
+    padding-right: 10px;
+}
+
+.section-right main {
+    text-align: right;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 10%;
+    object-fit: contain;
+    margin: 15px;
+}
+
+#intro {
+    display: flex;
+    margin: 2vh 20vw;
+    width: 70%;
+    height: calc(100vh - var(--head-height));
+    justify-content: first;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column nowrap;
+}
+
+.project > a > h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.project > main {
+    font-size: 22px;
+    width: 75%;
+}
+
+#certificates {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.certificate > a {
+    text-decoration: none;
+    margin: 0;
+}
+
+.certificate > a > h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.certificate > p {
+    font-size: 20px;
+}
+
+.section-left > .reveal {
+    position: relative;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.section-right > .reveal {
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+  
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+footer {
+    border-top: 1px black solid;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-    .intro {
-      @apply flex w-screen h-screen py-20 flex-row justify-center items-center;
-    }
-  }
