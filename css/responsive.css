@@ -5,14 +5,23 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #profile {
+        width: 50%;
+    }
     header#particles-js > div#head {
         font-size: 26px;
+    }
+    section {
+        width: 75%;
     }
     #container section {
         font-size: 18px;
     }
     #container section > header {
         font-size: 24px;
+    }
+    .project {
+        width: 100%;
     }
     .project h2 {
         font-size: 26px;
