@@ -2,7 +2,7 @@
 
 :root {
     --head-height: 20vh;
-} 
+}
 
 body {
     width: 100vw;
@@ -75,6 +75,10 @@ section > header {
     margin: 0;
     font-size: 18px;
     padding: 0;
+}
+
+.banner {
+    text-align: center;
 }
 
 .section-left > header {
@@ -156,16 +160,16 @@ section > header {
 
 .section-left > .reveal {
     position: relative;
-    transform: translateX(300px);
+    transform: translateX(100px);
     opacity: 0;
-    transition: 1.5s all ease;
+    transition: 1.5s all ease-in-out;
 }
 
 .section-right > .reveal {
     position: relative;
-    transform: translateX(-300px);
+    transform: translateX(-100px);
     opacity: 0;
-    transition: 1.5s all ease;
+    transition: 1.5s ease-in-out;
 }
   
 .reveal.active {

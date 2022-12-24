@@ -35,8 +35,16 @@ function colorText() {
     + ' ' + parseInt(Math.sin(f*parseFloat(i)+4*Math.PI/3)*127 + 128) + ')';
 }
 
+const RickRoll = new Audio("img/rickroll.mp3");
 function GoToSource() {
-    window.location.href = "https://www.youtube.com/watch?v=a3Z7zEc7AXQ&autoplay=1";
+    if (RickRoll.paused) {
+        RickRoll.load();
+        RickRoll.play();
+        window.open("https://github.com/varuuntiwari/varuuntiwari.github.io", "_blank");
+    } else {
+        RickRoll.pause();
+    }
+    
 }
 
 var timer;
@@ -51,6 +59,23 @@ function RainbowText() {
     }
 }
 
+function GetQuote() {
+    fetch("https://api.quotable.io/random?tags=technology")
+    .then((data) => data.json())
+    .then((quote) => {
+        document.getElementById("quote").innerText = (quote.content+"\n-"+quote.author).toLowerCase();
+    });
+}
+
+var Links = [
+    "https://github.com/varuuntiwari/galactic-facts",
+    "https://github.com/varuuntiwari/btc-alert-api",
+    "https://github.com/varuuntiwari/gomap",
+    "https://github.com/varuuntiwari/codechef-downloader",
+    "https://github.com/varuuntiwari/networking-in-py",
+    "https://github.com/varuuntiwari/catch-tor"
+]
+
 async function GetRepoInfo(link) {
     let arr = link.split('/');
     let url = `https://api.github.com/repos/${arr[3]}/${arr[4]}`;
@@ -62,14 +87,6 @@ async function GetRepoInfo(link) {
     });
     return [name, desc, link];
 }
-
-var Links = [
-    "https://github.com/varuuntiwari/galactic-facts",
-    "https://github.com/varuuntiwari/btc-alert-api",
-    "https://github.com/varuuntiwari/gomap",
-    "https://github.com/varuuntiwari/codechef-downloader",
-    "https://github.com/varuuntiwari/networking-in-py"
-]
 
 async function LoadProjects() {
     let parent = document.querySelector('#projects');

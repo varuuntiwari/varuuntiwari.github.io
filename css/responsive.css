@@ -1,0 +1,29 @@
+@media only screen and (max-width: 800px) {
+    span.banner {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header#particles-js > div#head {
+        font-size: 26px;
+    }
+    #container section {
+        font-size: 18px;
+    }
+    #container section > header {
+        font-size: 24px;
+    }
+    .project h2 {
+        font-size: 26px;
+    }
+    .project main {
+        font-size: 18px;
+    }
+    .certificate h2 {
+        font-size: 26px;
+    }
+    .certifcate p {
+        font-size: 18px;
+    }
+}

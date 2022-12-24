@@ -21,15 +21,12 @@
                 LoadCertificates();
                 
                 // Get quote
-                fetch("https://api.quotable.io/random?tags=technology")
-                .then((data) => data.json())
-                .then((quote) => {
-                    document.getElementById("quote").innerText = (quote.content+"\n-"+quote.author).toLowerCase();
-                });
+                GetQuote();
             };
             particlesJS.load('particles-js', 'particles.json');
         </script>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
         <header id="particles-js">
@@ -64,9 +61,6 @@
                     </span>
                 </section>
             </section>
-            <span style="color: transparent;">
-                aboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutmeaboutme
-            </span>
             <section class="section-left">
                 <header class="reveal">
                     about me
@@ -80,9 +74,6 @@
                     i usually practice on tryhackme and my profile is right <a href="https://tryhackme.com/p/anonymous95" target="_blank" noopener>here</a>.
                 </main>
             </section>
-            <span style="color: transparent;">
-                projectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojectsprojects
-            </span>
             <section class="section-right">
                 <header class="reveal">
                     <span class="desc">things i made that make me awesome</span>
@@ -92,37 +83,22 @@
                     <!-- Projects here are inserted through Javascript -->
                 </main>
             </section>
-            <span style="color: transparent;">
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares
+            <span class="banner">
+                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
+                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
+                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
+                areyouokay
             </span>
-            areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~areyouokay
             <hr width="80%" style="margin: 0;">
-            <span style="color: transparent;">
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            nobodycares
-            </span>
             
             <section class="section-left">
                 <header class="reveal">
                     quotes to make u think ‹3
-                    <span class="desc">coz u took the time to scroll till here</span>
+                    <span class="desc">coz u took the time to scroll till here </span>
+                    <span class="desc" onclick="GetQuote()" style="cursor: pointer;"> (<u>don't like this one?</u>)</span>
                 </header>
                 <main id="quote"></main>
             </section>
-            <span style="color: transparent;">
-                certificatescertificatescertificatescertificatescertificatescertificatescertificatescertificatescertificatescertificatescertificatescertificates
-            </span>
             <section class="section-right">
                 <header class="reveal">
                     <span class="desc">to make u believe the lies i feed u</span>
