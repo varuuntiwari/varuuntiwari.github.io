@@ -171,6 +171,14 @@ section > header {
 .certificate > p {
     font-size: 20px;
 }
+
+#contact-me > details > summary {
+    font-size: 20px;
+}
+
+#contact-me > details > p {
+    font-size: 18px;
+}
   
 .reveal.active {
     transform: translateX(0);
