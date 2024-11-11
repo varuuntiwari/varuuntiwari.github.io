@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root {
-    --head-height: 20vh;
+    --head-height: 15vh;
 }
 
 body {
     width: 100vw;
-    height: 100vh;
     margin: 0;
     font-family: 'VT323', monospace;
     color: rgb(71 85 105);
@@ -16,20 +15,14 @@ body {
     transition-duration: 2s;
 }
 
-header#particles-js {
+#page-header {
     width: 100vw;
     height: var(--head-height);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-header#particles-js > div#head {
+
     font-size: 34px;
-    background-color: transparent;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
 }
 
 #container {
@@ -40,7 +33,8 @@ header#particles-js > div#head {
     flex-flow: column nowrap;
 }
 
-svg#theme-change:hover, svg#rainbow-text:hover {
+svg#theme-change:hover,
+svg#rainbow-text:hover {
     cursor: pointer;
 }
 
@@ -61,13 +55,14 @@ section {
     margin-bottom: 20px;
     padding: 10px;
 }
-section > header {
-    font-size: 32px;
+
+section>header {
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 1vh;
 }
 
-.section-left > header {
+.section-left>header {
     border-left: 2px black solid;
     border-left-color: rgb(71 85 105);
     text-align: left;
@@ -78,7 +73,7 @@ section > header {
     text-align: left;
 }
 
-.section-right > header {
+.section-right>header {
     border-right: 2px black solid;
     border-right-color: rgb(71 85 105);
     text-align: right;
@@ -89,23 +84,23 @@ section > header {
     text-align: right;
 }
 
-.section-left > .reveal {
+.section-left>.reveal {
     position: relative;
     transform: translateX(100px);
     opacity: 0;
-    transition: 1.5s all ease-in-out;
+    transition: 1s all ease-in-out;
 }
 
-.section-right > .reveal {
+.section-right>.reveal {
     position: relative;
     transform: translateX(-100px);
     opacity: 0;
-    transition: 1.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .desc {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -130,6 +125,23 @@ section > header {
     flex-flow: column nowrap;
 }
 
+#xp {
+    details {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 10px 0 0;
+    }
+
+    hr {
+        width: 50%;
+        text-align: left;
+        margin: 10px 0;
+        border-style: dotted;
+    }
+}
+
 .project {
     width: 100%;
     height: 100%;
@@ -138,17 +150,17 @@ section > header {
     flex-flow: column nowrap;
 }
 
-.project > a > h2 {
+.project>a>h2 {
     font-size: 24px;
     margin-bottom: 0;
 }
 
-.project > main {
+.project>main {
     font-size: 22px;
     width: 75%;
 }
 
-.project > a {
+.project>a {
     text-decoration: none;
 }
 
@@ -158,28 +170,28 @@ section > header {
     justify-content: space-evenly;
 }
 
-.certificate > a {
+.certificate>a {
     text-decoration: none;
     margin: 0;
 }
 
-.certificate > a > h2 {
+.certificate>a>h2 {
     font-size: 24px;
     margin-bottom: 0;
 }
 
-.certificate > p {
+.certificate>p {
     font-size: 20px;
 }
 
-#contact-me > details > summary {
+#contact-me>details>summary {
     font-size: 20px;
 }
 
-#contact-me > details > p {
+#contact-me>details>p {
     font-size: 18px;
 }
-  
+
 .reveal.active {
     transform: translateX(0);
     opacity: 1;

@@ -4,61 +4,46 @@
         <title>Varun Tiwari</title>
         <link rel="icon" href="favicon.ico" />
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,height=device-height" />
         <meta name="author" content="Varun Tiwari">
         <script src="js/script.js"></script>
-        <script src="js/particles.js"></script>
         <script>
             window.onload = () => {
                 // Reveal titles on scroll
                 window.addEventListener("scroll", reveal);
 
-                // Trial for loading theme through cookies
-                // document.cookie = "theme=dark; SameSite=None; Secure";
-
                 // Load projects and certificates from Javascript
                 LoadProjects();
                 LoadCertificates();
-                
-                // Get quote
-                GetQuote();
             };
-            particlesJS.load('particles-js', 'particles.json');
         </script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
-        <header id="particles-js">
-            <div id="head">
-                <span title="rainbow text">
-                    <svg xmlns="http://www.w3.org/2000/svg" onclick="RainbowText()" id="rainbow-text" height="20" width="20" style="fill:black;">
-                        <path d="M1 15q0-1.875.708-3.51.709-1.636 1.927-2.855Q4.854 7.417 6.49 6.708 8.125 6 10 6q1.875 0 3.51.708 1.636.709 2.855 1.927 1.218 1.219 1.927 2.855Q19 13.125 19 15h-1.5q0-3.125-2.188-5.312Q13.125 7.5 10 7.5q-3.125 0-5.312 2.188Q2.5 11.875 2.5 15Zm3 0q0-2.5 1.75-4.25T10 9q2.5 0 4.25 1.75T16 15h-1.5q0-1.875-1.312-3.188Q11.875 10.5 10 10.5q-1.875 0-3.188 1.312Q5.5 13.125 5.5 15Z"/>
-                    </svg>
-                </span>
-                &nbsp;welcome to my homepage.&nbsp;
-                <span title="toggle theme">
-                    <svg xmlns="http://www.w3.org/2000/svg" onclick="ThemeChange()" id="theme-change" height="20" width="20" style="fill: black;">
-                        <path d="M10 17q-2.917 0-4.958-2.042Q3 12.917 3 10q0-2.917 2.042-4.958Q7.083 3 10 3q.271 0 .531.021.261.021.531.062-.812.605-1.291 1.5-.479.896-.479 1.917 0 1.771 1.218 2.99 1.219 1.218 2.99 1.218 1.021 0 1.917-.479.895-.479 1.5-1.291.041.27.062.531.021.26.021.531 0 2.917-2.042 4.958Q12.917 17 10 17Zm0-1.5q1.708 0 3.104-.979 1.396-.979 2.042-2.563-.417.104-.823.177-.406.073-.823.073-2.375 0-4.042-1.666Q7.792 8.875 7.792 6.5q0-.417.073-.823.073-.406.177-.823-1.584.646-2.563 2.042Q4.5 8.292 4.5 10q0 2.292 1.604 3.896T10 15.5Zm-.292-5.208Z"/>
-                    </svg>
-                </span>
-            </div>
+        <header id="page-header">
+            <span title="rainbow text">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="RainbowText()" id="rainbow-text" height="20" width="20" style="fill:black;">
+                    <path d="M1 15q0-1.875.708-3.51.709-1.636 1.927-2.855Q4.854 7.417 6.49 6.708 8.125 6 10 6q1.875 0 3.51.708 1.636.709 2.855 1.927 1.218 1.219 1.927 2.855Q19 13.125 19 15h-1.5q0-3.125-2.188-5.312Q13.125 7.5 10 7.5q-3.125 0-5.312 2.188Q2.5 11.875 2.5 15Zm3 0q0-2.5 1.75-4.25T10 9q2.5 0 4.25 1.75T16 15h-1.5q0-1.875-1.312-3.188Q11.875 10.5 10 10.5q-1.875 0-3.188 1.312Q5.5 13.125 5.5 15Z"/>
+                </svg>
+            </span>
+            &nbsp;welcome to my homepage.&nbsp;
+            <span title="toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="ThemeChange()" id="theme-change" height="20" width="20" style="fill: black;">
+                    <path d="M10 17q-2.917 0-4.958-2.042Q3 12.917 3 10q0-2.917 2.042-4.958Q7.083 3 10 3q.271 0 .531.021.261.021.531.062-.812.605-1.291 1.5-.479.896-.479 1.917 0 1.771 1.218 2.99 1.219 1.218 2.99 1.218 1.021 0 1.917-.479.895-.479 1.5-1.291.041.27.062.531.021.26.021.531 0 2.917-2.042 4.958Q12.917 17 10 17Zm0-1.5q1.708 0 3.104-.979 1.396-.979 2.042-2.563-.417.104-.823.177-.406.073-.823.073-2.375 0-4.042-1.666Q7.792 8.875 7.792 6.5q0-.417.073-.823.073-.406.177-.823-1.584.646-2.563 2.042Q4.5 8.292 4.5 10q0 2.292 1.604 3.896T10 15.5Zm-.292-5.208Z"/>
+                </svg>
+            </span>
         </header>
 
         <main id="container">
             <hr width="80%" style="margin: 0;" />
             <section id="intro">
                 <img src="img/profilepic.jpg" id="profile" />
-                hi, my name's varun. this is my one good picture (i hope).
+                hi, my name's varun.
                 <section>
-                    this page serves as a portfolio for showcasing my talents, projects and any professional experience i might have
-                    in the future. as of now, i am a final year student pursuing my bachelor's degree in computer science.
+                    this page serves as a portfolio for showcasing my talents, projects and any professional experience i have.
+                    as of now, i am an employee at <a href="https://evertz.com" target="_blank" noopener noreferrer>evertz</a> working as a full-stack developer.
                     <br><br>
-                    <span style="display: flex; justify-content: center; align-items: center; flex-flow: column nowrap;">
-                        scroll down to see my awesomeness and get depressed<br>
-                        <span style="font-size: 16px;">if its too much try the dark mode button on top</span>
-                        <span style="color: transparent; font-size: 16px;">if you are high try the rainbow text</span>
-                    </span>
                 </section>
             </section>
             <section class="section-right">
@@ -67,10 +52,11 @@
                     about me
                 </header>
                 <main>
-                    i'm an engineering student in the field of computer science. i don't aim for specific roles to work in my career. i look
-                    for software to build, problems to solve, tools to develop, etc. i like to build solutions which can make lives easier and fun.
+                    i work as a front-end developer and a part-time bug bounty hunter(without any bounties as of now). 
+                    i don't just aim for specific roles to work in. i look for software to build, problems to solve, tools to develop, etc.
+                    and build solutions which make lives easier and fun.
                     <br><br>
-                    i also like pentesting, so i dabble in network pentesting, webapp security testing and participating in CTFs among other activites.
+                    i also like pentesting, so i dabble in network pentesting, webapp security testing and try participating in CTFs among other activites.
                     i usually practice on tryhackme and my profile is right <a href="https://tryhackme.com/p/anonymous95" target="_blank" noopener>here</a>.
                     <br><br>
                 </main>
@@ -80,55 +66,50 @@
                     experience
                     <span class="desc">jobs i've pulled off</span>
                 </header>
-                <main>
+                <main id="xp">
                     <details>
                         <summary>
-                            <a href="https://evertz.com/" style="text-decoration: none;" target="_blank" noopener>evertz microsystems (jan '23 - present)</a>
+                            <a href="https://evertz.com/" style="text-decoration: none;" target="_blank" noopener>evertz microsystems (intern) (jan '23 - july '23)</a>
                         </summary>
                         <p>
-                            interning as a full-stack developer, working on stuff like apis, webapps, etc.
+                            interned as a full-stack developer, working on stuff like apis, webapps, etc.
+                            <hr />stack used: angular, nodejs, adonis.js, mysql
+                        </p>
+                    </details>
+                    <details>
+                        <summary>
+                            <a href="https://evertz.com/" style="text-decoration: none;" target="_blank" noopener>evertz microsystems (employee) (sept '23 - present)</a>
+                        </summary>
+                        <p>
+                            working as a front-end dev, developing and maintaining a variety of client-side applications responsible for 
+                            <br />stack used: angular, react, material ui
                         </p>
                     </details>
                 </main>
             </section>
             <section class="section-right">
                 <header class="reveal">
-                    <span class="desc">things i made that make me awesome</span>
+                    <span class="desc">things i make that i love</span>
                     projects
                 </header>
                 <main id="projects">
                     <!-- Projects here are inserted through Javascript -->
                 </main>
             </section>
-            <span class="banner">
-                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
-                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
-                areyouokay~~~~~~~~~~~~~~~~~~~~~~~~checkpoint~~~~~~~~~~~~~~~~~~~~~~~~
-                areyouokay
-            </span>
             <hr width="80%" style="margin: 0;">
-            
             <section class="section-left">
-                <header class="reveal">
-                    quotes to make u think ‹3
-                    <span class="desc">coz u took the time to scroll till here </span>
-                    <span class="desc" onclick="GetQuote()" style="cursor: pointer;"> (<u>don't like this one?</u>)</span>
-                </header>
-                <main id="quote"></main>
-            </section>
-            <section class="section-right">
-                <header class="reveal">
-                    <span class="desc">to make u believe the lies i feed u</span>
+                <header class="reveal">                    
                     certificates
+                    <span class="desc">others will tell you how good i am</span>
                 </header>
                 <main id="certificates">
                     <!-- Certificates here are inserted with Javascript -->
                 </main>
             </section>
-            <section class="section-left">
+            <section class="section-right">
                 <header class="reveal">
-                    contact me
                     <span class="desc">at your risk</span>
+                    contact me
                 </header>
                 <main id="contact-me">
                     <details>

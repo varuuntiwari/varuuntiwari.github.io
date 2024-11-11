@@ -35,16 +35,16 @@ function colorText() {
     + ' ' + parseInt(Math.sin(f*parseFloat(i)+4*Math.PI/3)*127 + 128) + ')';
 }
 
-const RickRoll = new Audio("img/rickroll.mp3");
+// const RickRoll = new Audio("img/rickroll.mp3");
 function GoToSource() {
-    if (RickRoll.paused) {
+    window.open("https://github.com/varuuntiwari/varuuntiwari.github.io", "_blank");
+    /* if (RickRoll.paused) {
         RickRoll.load();
         RickRoll.play();
         window.open("https://github.com/varuuntiwari/varuuntiwari.github.io", "_blank");
     } else {
         RickRoll.pause();
-    }
-    
+    } */
 }
 
 var timer;
@@ -59,20 +59,12 @@ function RainbowText() {
     }
 }
 
-function GetQuote() {
-    fetch("https://api.quotable.io/random?tags=technology")
-    .then((data) => data.json())
-    .then((quote) => {
-        document.getElementById("quote").innerText = (quote.content+"\n-"+quote.author).toLowerCase();
-    });
-}
-
 var Links = [
-    "https://github.com/varuuntiwari/galactic-facts",
-    "https://github.com/varuuntiwari/btc-alert-api",
+    "https://github.com/varuuntiwari/tg-notifier",
+    "https://github.com/varuuntiwari/share",
     "https://github.com/varuuntiwari/gomap",
     "https://github.com/varuuntiwari/codechef-downloader",
-    "https://github.com/varuuntiwari/networking-in-py",
+    "https://github.com/varuuntiwari/shodan-go",
     "https://github.com/varuuntiwari/catch-tor"
 ]
 
